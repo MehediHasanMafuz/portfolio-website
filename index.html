@@ -4,409 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Mehedi Hasan</title>
+    <link rel="icon" href="photo.jpg" type="image/x-i">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            background-color: #080808;
-            color: #fff;
-        }
-
-        #header {
-            width: 100%;
-            height: 100vh;
-            background-image: url(fly1.png);
-            background-size: cover;
-            /* background-position:left; */
-        }
-
-        .container {
-            padding: -12px 10%;
-
-        }
-
-        nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .logo {
-            width: 140px;
-        }
-
-        nav ul li {
-            display: inline-block;
-            list-style: none;
-            margin: 10px 20px;
-
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-            position: relative;
-        }
-
-        nav ul li a::after {
-            content: '';
-            width: 0;
-            height: 3px;
-            background: #ff004f;
-            position: absolute;
-            left: 0;
-            bottom: -6px;
-            transition: 0.5s;
-        }
-
-        nav ul li a:hover::after {
-            width: 100%;
-        }
-
-
-        .header-text {
-            margin-top: 124px;
-            /* font-size: 30px; */
-        }
-
-        .header-text h1 {
-            font-size: 45px;
-            margin-top: 10px;
-
-        }
-
-        #element {
-            /* color: rgb(170, 107, 228); */
-            font-size: 40px;
-            font: bold;
-            color: #ff004f;
-
-
-        }
-
-        .purple {
-            color: #ff004f;
-
-        }
-
-        /* --------------about */
-        #about {
-            padding: 70px 0;
-            color: #ababab;
-        }
-
-        .row {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .about-col-1 {
-            flex-basis: 35%;
-        }
-
-        .about-col-1 img {
-            border-radius: 15px;
-
-        }
-
-        .about-col-2 {
-            flex-basis: 60%;
-        }
-
-        .sub-title {
-            font-size: 6opx;
-            font-weight: 600;
-            color: #fff;
-            text-align: center;
-
-        }
-        .sub-titlee {
-            font-size: 6opx;
-            font-weight: 600;
-            color: #fff;
-            
-
-        }
-
-        /* ----------service */
-        #service {
-            padding: 30px 0;
-        }
-
-        .service-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            grid-gap: 40px;
-            margin-top: 50px;
-        }
-
-        .service-list div {
-            background: #262626;
-            padding: 40px;
-            font-size: 13px;
-            font-weight: 300;
-            border-radius: 10px;
-            transition: backgrout 0.5s, transform 0.5s;
-
-        }
-
-        .service-list div i {
-            font-size: 50px;
-            margin-bottom: 30px;
-        }
-
-        .service-list div h2 {
-            font-size: 30px;
-            font-weight: 500;
-            margin-bottom: 15px;
-
-        }
-
-        .service-list div a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 12px;
-            margin-top: 20px;
-            display: inline-block;
-        }
-
-        .service-list div:hover {
-            background: #ff004f;
-            transform: translateY(-10px);
-        }
-
-
-            /* =========protfolio */
-
-            
-        #portfolio{
-            padding: 50px 0;
-            
-        }
-
-        .work-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            grid-gap: 40px;
-            margin-top: 50px;
-
-        }
-        .work{
-            
-            position: relative;
-            overflow: hidden;
-            
-            border-radius: 10px;
-            
-        }
-        .rem{
-            width: 24rem;
-            border-radius: 10px;
-           
-
-            
-        }
-
-        .work img{
-            width: 100%;
-            border-radius: 10px; 
-            transition: transform 0.5s;
-            
-            
-        }
-        .work:hover img{
-            transform: scale(1.1);
-
-        }
-        .work:hover .layer{
-            height: 100%;
-        }
-
-        .layer{
-            width: 100%;
-            height: 0;
-            background: linear-gradient(rgb(0,0,0,0.6), #ff004f);
-            border-radius: 10px;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-             justify-content: center;
-            flex-direction: column; 
-            padding: 0 40px;
-            text-align: center;
-            font-size: 14px;
-            transition: height 0.5s;
-
-
-        }
-        .layer h3{
-            font-weight: 500;
-            margin-bottom: 20px;
-
-        }
-        .layer a{
-            margin-top: 20px;
-            color: #ff004f;
-            text-decoration: none;
-            font-size: 18px;
-            line-height: 60px;
-            background: #fff;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            text-align: center;
-
-        }
-        .btn{
-            display: block;
-            margin: 50px auto ;
-            width: fit-content;
-            border: 1px solid #ff004f;
-            padding: 14px;
-            border-radius: 6px;
-            text-decoration: none;
-            color: #fff;
-            transition: backgroud 0.5s;
-        }
-        .btn:hover{
-            background: #ff004f;
-            
-            
-        }
-        .contact-left{
-            flex-basis: 35%;
-        }
-        .contact-right{
-            flex-basis: 60%;
-        }
-        .contact-left p{
-            color: #ff004f;
-            margin: 15px;
-            font-size: 25px;
-             }
-        .contact-left p i{
-            color: #ff004f;
-            margin-right: 15px;
-            font-size: 25px;
-
-        }
-        .social-icons{
-            margin-top: 30px;
-        }
-        .social-icons a{
-            text-decoration: none;
-            font-size: 30px;
-            margin-right: 15px;
-            color: #ababab;
-            display: inline-block;
-            transition: transform 0.5s;
-        }
-        .social-icons a:hover{
-            color: #ff004f;
-            transform: translateY(-5px);
-        }
-        .btn.btn2{
-            display: inline-block;
-            background: #ff004f ;
-        }
-        .contact-right form{
-            width: 100%;
-
-        }
-        form input, form textarea{
-            width: 100%;
-            border: 0;
-            outline: none;
-            background: #262626;
-            padding: 15px;
-            margin: 15px 0;
-            color: #fff;
-            font-size: 18px;
-            border-radius: 6px;
-            
-        }
-        form .btn2{
-            padding: 14px 60px;
-            font-size: 18px;
-            margin-top: 20px;
-            cursor: pointer;
-        }
-        .copyright{
-            width: 100%;
-            text-align: center;
-            padding: 25px 0;
-            background: #262626;
-            font-weight: 300;
-            margin-top: 20px;
-        }
-        .copyright i{
-            color: #ff004f;
-        }
-        nav .fa-solid{
-            display: none;
-        }
-
-        /* ----------------css for small screen ---- */
-       @media only screen and (max-width:600px) {
-        nav .fa-solid{
-            display: block;
-            font-size: 25px;
-        }
-        nav ul{
-            background: #ff004f;
-            position: fixed;
-            top: 0;
-            right: -200px;
-            width: 200px;
-            height: 100vh;
-            padding-top: 50px ;
-            z-index: 2;
-            transition: right 0.5s;
-        }
-        nav ul li{
-            display: block;
-            margin: 25px;
-        }
-        nav ul .fa-solid{
-            position: absolute;
-            top: 25px;
-            left: 25px;
-            cursor: pointer;
-
-        }
-
-
-
-
-        
-       }
-        
     
-    
-
-
-    </style>
-
     <div id="header">
         <div class="container">
             <nav>
@@ -470,13 +80,13 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="1.png" alt="">
+                    <img src="photo.jpg" alt="">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-titlee">About Me</h1>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
-                    veniam consequatur fugit magni et blanditiis cumque alias assumenda accusamus obcaecati praesentium,
-                    cupiditate quasi nam repudiandae fuga expedita ut impedit perferendis.
+                    Assalamualaikum
+                    'Hello/ Good Morning/ Good Afternoon, my name is Mehedi Hasan, 22, still a student, I completed my Diploma in CSE from Khulna Polytechnic Institute.
+                     I’m skilled with HTML,CSS,Wordpress and Javascript, and I am trying to learn other programming languages, step by step.
                 </div>
             </div>
         </div>
@@ -490,24 +100,27 @@
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nobis quo
-                        minima quaerat officia quis nemo culpa velit perferendis fugiat! Voluptatem
+                    <p>Proficient in Wordpress, HTML, CSS and JavaScript. Led website redesign projects, 
+                        resulting in a 30% increase in user engagement and a 20% boost in conversion rates. Committed to creating 
+                        visually appealing and user-friendly websites that drive results.”
                     </p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop"></i>
                     <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nobis quo
-                        minima quaerat officia quis nemo culpa velit perferendis fugiat! Voluptatem
+                    <p>Hello, I'm Mehedi Hasan, a UI/UX Designer with over 2 years of experience. I specialize in 
+                        creating intuitive and visually appealing designs that are user-friendly and easy to navigate.
+                        If you're looking for a talented UI/UX designer to bring your ideas to life, I'd love to work with you. 
+                        Let's collaborate and create something great!"
                     </p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-video"></i>
                     <h2>Vedio Editing</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nobis quo
-                        minima quaerat officia quis nemo culpa velit perferendis fugiat! Voluptatem
+                    <p>I am an experienced video editor and I help you to edit your videos in the best quality.
+                         I will give more time to edit videos because this is not an easy job.
                     </p>
                     <a href="#">Learn more</a>
                 </div>
@@ -562,15 +175,15 @@
            <div class="row">
             <div class="contact-left">
                 <h1>Contact Me </h1>
-                <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
-                <p><i class="fa-solid fa-phone-volume"></i> 018374748484</p>
+                <p><i class="fa-solid fa-paper-plane"></i>mehedihasan5522000@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>01647190986</p>
                 <div class="social-icons">
-                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100072388654891"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100072388654891"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100072388654891"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100072388654891"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <a href="pngwing.com (4).png" download class="btn btn2">Download CV </a>
+                <a href="cv.pdf" download class="btn btn2">Download CV </a>
             </div>
             <div class="contact-right">
                 <form action="">
@@ -585,7 +198,7 @@
         </div>
 
         <div class="copyright">
-            <p>Copyright Mehedi Hasan. Made with <i class="fa-solid fa-heart"></i> Easy Tutorials </p>
+            <p>Copyright Mehedi Hasan. Made with <i class="fa-solid fa-heart"></i>  </p>
         </div>
     </div>
 
